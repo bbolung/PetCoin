@@ -35,10 +35,10 @@
   <td align="center"><img src="images/profile_image.png" width="150px"></td>
  </tr>
  <tr>
-  <td>키오스크 실행 세션<br>라우팅 리팩터링·공통API 구축<br>관리자 페이지와 태블릿 연동</td>
+  <td>키오스크 실행 세션<br>라우팅 리팩터링·공통API 구축<br>태블릿 연동</td>
   <td>로그인/회원가입<br>지도 연동 기능</td>
   <td>AI 학습 모델 개발<br>AI·React·Spring 연동 Flash 서버 구축<br>마이페이지</td>
-  <td>관리자 페이지 백엔드 기능 구현 및 프론트엔드 연결</td>
+  <td>관리자 페이지 백엔드 기능 구현 및 <br>프론트엔드 연결</td>
  </tr>
 </table>
 
@@ -88,7 +88,7 @@
 <details>
   <summary>Usecase Diagram</summary>
   <div markdown="1">
-     <img src="/images/Diagram/Usecase.png" width="35%">
+     <img src="/images/Diagram/Usecase.png">
   </div>
 </details>
 <details>
@@ -105,7 +105,8 @@
 <details>
   <summary>대시보드 페이지</summary>
   <div markdown="1">
-     <img src="images/page/dashboard.jpg" width="45%">
+     <img src="images/page/dashboard.JPG" width="80%">
+     <br>
      <p><b>* 기능</b></p>
      <p>- 수거량, 회원, 포인트의 통계 정보 확인 가능</p>
      <p>- 키오스크 현황에 대해 간략적으로 정보 확인 가능</p>
@@ -117,7 +118,8 @@
 <details>
   <summary>수거내역 페이지</summary>
   <div markdown="1">
-     <img src="images/page/collection.jpg" width="80%">
+     <img src="images/page/collection.JPG" width="80%">
+     <br>
      <p><b>* 기능</b></p>
      <p>- 무인 회수기의 정보 목록으로 확인 가능</p>
      <p>- 필터링 기능 사용하여 무인 회수기 단건 조회 가능</p>
@@ -128,7 +130,8 @@
 <details>
   <summary>회원 관리 페이지</summary>
   <div markdown="1">
-    <img src="images/page/member.jpg" width="80%">
+    <img src="images/page/member.JPG" width="80%">
+    <br>
     <p><b>* 기능</b></p>
     <p>- 전체 회원에 대한 통계 정보 확인 가능</p>
     <p>- 페이징 처리를 통해 한 페이지당 6명의 회원 정보 확인 가능</p>
@@ -140,9 +143,10 @@
   <summary>포인트 관리 페이지</summary>
   <div markdown="1">
     <p aline="center">
-      <img src="images/page/point1.jpg" width="80%">
-      <img src="images/page/point2.jpg" width="80%">
+      <img src="images/page/point1.JPG" width="45%">
+      <img src="images/page/point2.png" width="50%">
     </p>
+    <br>
     <p><b>* 기능</b></p>
     <p>- 포인트 요청 처리 상태에 따라 통계 정보 확인 가능</p>
     <p>- 전체 포인트 요청 목록으로 확인 가능</p>
@@ -157,7 +161,8 @@
 <details>
   <summary>키오스크 관리 페이지</summary>
   <div markdown="1">
-    <img src="images/page/kiosk.jpg" width="80%">
+    <img src="images/page/kiosk.JPG" width="80%">
+    <br>
     <p><b>* 기능</b></p>
     <p>- 전체 키오스크 정보 확인 가능</p>
     <p>- 키오스크 운영 상태(운영중/점검중) 설정 가능</p>
