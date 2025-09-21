@@ -1,0 +1,53 @@
+# Spring Boot, MyBatis, 데이터소스 설정 파일
+# @fileName : application.yml
+# @since : 250825
+# @history
+# - 250826 | heekyung | username: petcoin로 수정 / mybatis 위치 변경 / DB 컬럼명과 Java 필드명 자동 매핑 코드 추가
+# - 250826 | yukyeong  | MyBatis 설정 추가(컬럼명-필드명 자동 매핑,자동 PK 처리, Enum 매핑), MyBatis SQL 로그 출력 설정 추가
+# - 250829 | heekyung | JWT/CORS 만료시간 설정 추가
+
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/petcoin?serverTimezone=UTC
+    username: petcoin
+    password: 1234
+
+  devtools:
+    livereload:
+      enabled: true
+
+  thymeleaf:
+    cache: false
+
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 100MB
+
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+mybatis:
+  #config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath:mapper/**/*.xml
+
+  # DB 컬럼명과 Java 필드명 자동 매핑 (snake_case → camelCase)
+  configuration:
+    map-underscore-to-camel-case: true
+    use-generated-keys: true #자동으로 생성된 키 처리하기 위한 설정
+    default-enum-type-handler: org.apache.ibatis.type.EnumTypeHandler # enum 타입 매핑
+
+logging:
+  level:
+    root: info
+    com.petcoin.mapper: debug
+    org.apache.ibatis: debug
+
+jwt:
+  secret: "change_this_to_a_random_32+_byte_string________________"
+  access-validity-seconds: 3600
